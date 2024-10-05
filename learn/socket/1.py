@@ -40,7 +40,7 @@ while True:
     if( first_header_component[0] == "GET"):
         content = "<h1> No Content <h1>"
         if (first_header_component[1] == "/"):
-            content = open("server/one.html", "r").read()
+            content = open("one.html", "r").read()
         else: 
             break 
  
@@ -58,11 +58,3 @@ while True:
 
 server_socket.close()
     
-
-
-
-
-
-            
-
-    # request has http methods first , second is URL  and third   
