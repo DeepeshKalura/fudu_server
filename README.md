@@ -62,7 +62,7 @@ If you find this project helpful and would like to support its development, you 
 
 ### For users in India:
 You can donate via UPI:
-![UPI](/docs/assets/image.png)
+![UPI](/docs/assets/upi.png)
 
 ---
 

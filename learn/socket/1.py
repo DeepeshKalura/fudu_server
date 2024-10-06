@@ -22,6 +22,7 @@ server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 # Bind server with it's resource simply with the computer
 server_socket.bind((SERVER_HOST, SERVER_PORT))
 
+# Backlog parameter will listen wait for 5 queue
 server_socket.listen(5)
 
 print(f'Listening on port {SERVER_PORT} ...') 
