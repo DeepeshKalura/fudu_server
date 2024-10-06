@@ -8,9 +8,8 @@ import logging
 import fcntl
 import tempfile
 
-# Configure logging
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("http_server")
+logger = logging.getLogger("fudu_server")
 
 class TCPConnection:
     """Class to handle TCP connections."""
@@ -50,7 +49,7 @@ class HTTPServer:
     WORKERS = {}
 
     def __init__(self, address=None, worker_processes=1, timeout=60):
-        self.address = address if address else ("127.0.0.1", 8000)
+        self.address = address if address else ("127.0.0.1", 6969)
         if worker_processes <= 0:
             exit("At least one worker is required.")
         else:
